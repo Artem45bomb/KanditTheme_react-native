@@ -27,8 +27,11 @@ export class KanditTheme implements IKanditTheme{
 	private readonly _colors: IColorsApi
 	private readonly _shapes: IShapesApi
 
-	constructor(params: TU<UKanditTheme> = {}) {
-		this._colors = params.colors ? replacedStyle(params.colors, colorsBase) : colorsBase
+	constructor(params: TU<UKanditTheme & {currentTheme:string}> = {}) {
+		
+		const currentTheme = params.currentTheme == "dark" ? "dark" : "light"
+
+		this._colors = params.colors ? replacedStyle(params.colors, colorsBase[currentTheme]) : colorsBase[currentTheme]
 		this._typography = params?.typography ? replacedStyle(params.typography, typographyBase) : typographyBase
 		this._shapes = params?.shapes ? replacedStyle(params.shapes,shapesBase) : shapesBase
 	}
