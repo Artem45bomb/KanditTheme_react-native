@@ -1,9 +1,21 @@
 import type { ColorValue,TextStyle } from "react-native"
 
 export interface ITypographyApi{
-	displaySmall: ITextStyle,
-	displayLarge: ITextStyle,
-	displayMedium: ITextStyle,
+	displayLarge: TextStyle;
+	displayMedium: TextStyle;
+	displaySmall: TextStyle;
+	headlineLarge: TextStyle;
+	headlineMedium: TextStyle;
+	headlineSmall: TextStyle;
+	titleLarge: TextStyle;
+	titleMedium: TextStyle;
+	titleSmall: TextStyle;
+	bodyLarge: TextStyle;
+	bodyMedium: TextStyle;
+	bodySmall: TextStyle;
+	labelLarge: TextStyle;
+	labelMedium: TextStyle;
+	labelSmall: TextStyle;
 }
 
 export interface ITextStyle {
