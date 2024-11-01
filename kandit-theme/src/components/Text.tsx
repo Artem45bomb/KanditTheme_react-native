@@ -4,10 +4,11 @@ import { useTheme } from "../hooks/theme"
 
 
 export const Text: FC<Native.TextProps> = (props) => {
-	const {value} = useTheme()
+	const {value,setValue} = useTheme()
 
 	return <Native.Text
 		{...props}
+		onPress={() =>setValue("dark")}
 		style={[{
 		fontSize:value.typography.displayLarge.fontSize,
 		fontWeight: value.typography.displayLarge.fontWeight,

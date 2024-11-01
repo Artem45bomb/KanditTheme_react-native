@@ -27,9 +27,8 @@ export const SetupProvider:React.FC<{children:React.ReactNode}> = ({children}) =
             displaySmall: new TextStyle()
         }}
         shapes={{}}
-        currentThema={"light"}
-        colorsSchema={themas}
         enabledDynamicThemeDate={true}
+        colorsSchema={themas}
     >
         {children}
     </ThemeProvider>

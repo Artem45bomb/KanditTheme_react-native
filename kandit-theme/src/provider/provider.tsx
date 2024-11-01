@@ -43,7 +43,8 @@ export const ThemeProvider: FC<Provider> = (params) => {
 	},[])
 
 	const MainThema = new KanditTheme({
-		colors:(colorsSchema && colorsSchema[value ?? "light"]) || colorsBase,
+		currentTheme: currentThema,
+		colors: colorsSchema && colorsSchema[value],
 		typography:typography,
 		shapes
 	})
