@@ -1,5 +1,5 @@
-import { TextStyle } from "@li/src/styles/classes/typegraphy";
-import { ITypographyApi } from "@li/src/styles/interfaces/typography";
+import { TextStyle } from "../styles";
+import { ITypographyApi } from "../styles";
 
 
 export const typographyBase:ITypographyApi = {

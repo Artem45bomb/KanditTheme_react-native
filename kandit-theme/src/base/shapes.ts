@@ -1,4 +1,4 @@
-import { IShapesApi } from "@li/src/styles/interfaces/shapes";
+import { IShapesApi } from "../styles";
 
 
 

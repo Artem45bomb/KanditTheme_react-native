@@ -1,4 +1,4 @@
-import { KanditTheme } from "@li/src/styles/classes/theme";
+import { KanditTheme } from "../styles";
 
 
 

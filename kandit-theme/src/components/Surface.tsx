@@ -1,6 +1,6 @@
 import React,{ FC, useContext } from "react"
 import Native from "react-native"
-import { Theme } from "@li/src/provider/provider"
+import { Theme } from "../provider"
 
 
 export const Surface: FC<Native.ViewProps> = (props) => {

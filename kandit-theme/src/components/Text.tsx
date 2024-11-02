@@ -1,6 +1,6 @@
 import React,{ FC } from "react"
 import Native from "react-native"
-import { useTheme } from "../hooks/theme"
+import { useTheme } from "../hooks"
 
 
 export const Text: FC<Native.TextProps> = (props) => {
@@ -10,10 +10,10 @@ export const Text: FC<Native.TextProps> = (props) => {
 		{...props}
 		onPress={() =>setValue("dark")}
 		style={[{
-		fontSize:value.typography.displayLarge.fontSize,
-		fontWeight: value.typography.displayLarge.fontWeight,
-		letterSpacing: value.typography.displayLarge.letterSpacing,
-		color: value.typography.displayLarge.color
+		fontSize:value.typography.bodyMedium.fontSize,
+		fontWeight: value.typography.bodyMedium.fontWeight,
+		letterSpacing: value.typography.bodyMedium.letterSpacing,
+		color: value.typography.bodyMedium.color
 		},props.style]}
 	/>
 }

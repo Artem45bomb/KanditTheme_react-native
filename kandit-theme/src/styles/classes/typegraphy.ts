@@ -1,6 +1,6 @@
 import { ColorValue } from "react-native";
-import { ITextStyle } from "@li/src/styles/interfaces/typography";
-import { TU } from "@li/src/type/types";
+import { ITextStyle } from "../../styles";
+import { TU } from "../../type";
 
 
 export class TextStyle implements ITextStyle {

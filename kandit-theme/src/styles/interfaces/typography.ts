@@ -1,4 +1,5 @@
-import type { ColorValue,TextStyle } from "react-native"
+import RN,{ ColorValue } from "react-native"
+import { TextStyle } from "../classes";
 
 export interface ITypographyApi{
 	displayLarge: TextStyle;
@@ -22,7 +23,7 @@ export interface ITextStyle {
 	color: ColorValue,
 	letterSpacing: number,
 	fontSize: number,
-	fontWeight:TextStyle['fontWeight']
+	fontWeight:RN.TextStyle['fontWeight']
 }
 
 

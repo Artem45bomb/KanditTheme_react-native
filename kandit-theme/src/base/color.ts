@@ -1,4 +1,4 @@
-import { IColorsApi } from "@li/src/styles/interfaces/colors";
+import { IColorsApi } from "../styles";
 
 export const colorsBlack: IColorsApi = {
     general: "black",

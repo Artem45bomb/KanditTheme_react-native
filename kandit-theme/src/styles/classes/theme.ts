@@ -1,18 +1,19 @@
-import { colorsBase } from "@li/src/base/color";
-import { shapesBase } from "@li/src/base/shapes";
-import { typographyBase } from "@li/src/base/typegraphy";
-import { IColorsApi } from "@li/src/styles/interfaces/colors";
-import { IShapesApi } from "@li/src/styles/interfaces/shapes";
-import { IKanditTheme,UKanditTheme } from "@li/src/styles/interfaces/theme";
-import { ITypographyApi } from "@li/src/styles/interfaces/typography";
-import { TU } from "@li/src/type/types";
+import { colorsBase } from "../../base";
+import { shapesBase } from "../../base"
+import { typographyBase } from "../../base"
+import { IColorsApi } from "../../styles"
+import { IShapesApi } from "../../styles"
+import { IKanditTheme,UKanditTheme } from "../../styles"
+import { ITypographyApi } from "../../styles"
+import { TU } from "../../type"
 
-function replacedStyle<B extends object,T extends {[key in keyof B]?:B[key]}>(params: T, baseTheme: B):B
+function replacedStyle<B,T extends {[key in keyof B]?:B[key]}>(params: T, baseTheme: B):B
 {
 	if (params) {
 		for (const key of Object.keys(params) as Array<keyof B>) {
 			if (params[key] !== undefined) {
-				const value = params[key] as B[keyof B]
+				const value = params[key]
+				//@ts-ignore
 				baseTheme[key] = value
 			}
 		}

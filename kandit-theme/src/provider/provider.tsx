@@ -1,10 +1,9 @@
-import { KanditTheme } from "@li/src/styles/classes/theme";
+import { KanditTheme } from "../styles";
 import React, {createContext, FC, useEffect} from "react";
-import { ThemeBase } from "@li/src/base/theme";
-import {IColorsApi} from "@src/styles/interfaces/colors";
-import {IKanditTheme} from "@src/styles/interfaces/theme";
-import {colorsBase} from "@src/base/color";
-import { TU } from "../type/types";
+import { ThemeBase } from "../base";
+import {IColorsApi} from "../styles";
+import {IKanditTheme} from "../styles";
+import { TU } from "../type";
 
 export type ColorsTheme = Record<string,TU<IColorsApi>>
 export type PContext = {value:KanditTheme,setValue:(thema:string) => void}

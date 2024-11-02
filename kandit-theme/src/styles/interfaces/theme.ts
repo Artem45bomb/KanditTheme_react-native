@@ -1,4 +1,4 @@
-import { TU } from "@li/src/type/types";
+import { TU } from "../../type";
 import { IColorsApi } from "./colors";
 import { IShapesApi } from "./shapes";
 import { ITypographyApi } from "./typography";
