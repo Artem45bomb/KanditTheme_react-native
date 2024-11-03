@@ -1,5 +1,6 @@
-This library is designed to work with themes, currently supporting color changes, dynamic themes, and more. Below is an example of how to use it:
+This library is designed to work with themes, currently supporting color changes, dynamic themes, and more. Below is an example of how to use it
 
+```
 import { ColorsTheme, ThemeProvider } from "@src/provider/provider";
 import { TextStyle } from "@src/styles/classes/typegraphy";
 import React from "react";
@@ -36,3 +37,4 @@ export const SetupProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         </ThemeProvider>
     );
 }
+```
